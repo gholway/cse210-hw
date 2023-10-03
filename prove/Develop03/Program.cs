@@ -32,14 +32,14 @@ private class word
             else if(action.lower == "reference")
             {
                 reference.scriptureReferance(sPas, sRef);
-                Console.WriteLine("Press enter to continue memorization or quit to exit.")
+                Console.WriteLine("Press enter to continue memorization or quit to exit.");
                 string action = Console.ReadLine();
             }
             else
             {
                 if(selection == "__")
                 {
-                    repeat = true
+                    repeat = true;
                 }
                 if(repeat == false)
                 {
