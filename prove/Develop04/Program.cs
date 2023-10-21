@@ -1,10 +1,11 @@
 using System;
 using System.Collections.Generic;
+using System.Security.Cryptography.X509Certificates;
 
 public class Program
 {
-    public Baseplate run = new Baseplate();
-    public void Main()
+    public static Baseplate run = new Baseplate();
+    static void Main()
     {
         run.Execution();
     }
