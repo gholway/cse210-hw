@@ -15,14 +15,23 @@ class Program
         string page2 = video2.stuff();
         string page3 = video3.stuff();
         string page4 = video4.stuff();
+        Console.WriteLine(page1);
+        Console.WriteLine(page2);
+        Console.WriteLine(page3);
+        Console.WriteLine(page4);
+        string pause = Console.ReadLine();
+        Console.WriteLine(pause);
     }
 }
 public class Video
 {
     public string stuff()
     {
+        Console.WriteLine("Enter author");
         string author = Console.ReadLine();
+        Console.WriteLine("Enter title");
         string title = Console.ReadLine();
+        Console.WriteLine("Enter length in minutes.");
         int length = Int32.Parse(Console.ReadLine());
         Comment videocomments = new Comment();
         string commentSection = videocomments.comments();
@@ -34,6 +43,7 @@ public class Comment
 {
     public string comments()
     {
+        Console.WriteLine("Enter comment");
         string comment = Console.ReadLine();
         return comment;
     }
